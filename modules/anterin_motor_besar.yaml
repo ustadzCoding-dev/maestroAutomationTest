@@ -1,0 +1,31 @@
+appId: ${APP_USER}
+---
+# 1. Start App
+- launchApp:
+    clearState: false
+- waitForAnimationToEnd:
+    timeout: 10000 
+# 2. Klik Icon Motor (Anterin)
+- tapOn:
+    point: "17%,50%" 
+- waitForAnimationToEnd:
+    timeout: 10000
+# 3. Klik "Mau kemana hari ini?"
+- tapOn: "Pilih lewat peta"
+- waitForAnimationToEnd
+# 4. Klik "Cari lokasi tujuan..." dan Input Lokasi
+- tapOn: "Cari lokasi tujuan..."
+- inputText: "Stasiun Gawok"
+- waitForAnimationToEnd 
+# 5. Pilih (Stasiun Gawok)
+- tapOn:
+    point: "50%,35%"
+# 6. Tunggu Loading Map & Klik "Jemput aku disini"
+- waitForAnimationToEnd
+- tapOn: "Jemput aku di sini"
+# 7. Klik "Motor Besar"
+- waitForAnimationToEnd
+- tapOn:
+    point: "90%,64%"
+# 8. Selesai (Stop sesuai request)
+- takeScreenshot: "hasil_anterin_motor_besar"

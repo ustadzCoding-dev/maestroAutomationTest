@@ -1,0 +1,86 @@
+appId: ${APP_USER}
+---
+
+- launchApp:
+    clearState: false
+- waitForAnimationToEnd:
+    timeout: 10000
+
+- tapOn:
+    point: "61%,50%" #Icon Bersihin
+- waitForAnimationToEnd:
+    timeout: 10000
+
+- tapOn:
+    point: "71%,37%" #Klik Lokasi Saat Ini
+- waitForAnimationToEnd:
+    timeout: 10000
+
+- tapOn:
+    point: "33%,41%" #Klik Ruang 1
+- inputText: "Ruang Kerja"
+- waitForAnimationToEnd:
+    timeout: 10000
+- tapOn:
+    point: "69%,41%" #Klik Ukuran Ruang 1
+- waitForAnimationToEnd:
+    timeout: 10000
+- tapOn:
+    point: "50%,80%" #Berdasarkan Luas Ruang
+- tapOn:
+    point: "50%,76%" #Klik box inputan angka
+- tapOn:
+    point: "87%,85%" #Hapus angka default "0"
+- tapOn:
+    point: "38%,85%" #Input angka luas
+- tapOn:
+    point: "87%,91%" #Klik checklist keyboard
+- tapOn:
+    point: "50%,84%" #Klik Tetapkan
+
+- tapOn:
+    point: "50%,49%" #Tambah Area
+
+- tapOn:
+    point: "34%,48%" #Klik Ruang 2
+- inputText: "Ruang Kamar"
+- waitForAnimationToEnd:
+    timeout: 10000
+- tapOn:
+    point: "69%,48%" #Klik Ukuran Ruang 2
+- waitForAnimationToEnd:
+    timeout: 10000
+- tapOn:
+    point: "50%,87%" #Berdasarkan Jumlah Ruang
+- tapOn:
+    point: "50%,78%" #Input box inputan angka
+- tapOn:
+    point: "87%,85%" #Hapus angka default "0"
+- tapOn:
+    point: "62%,79%" #Input angka jumlah
+- tapOn:
+    point: "87%,91%" #Klik checklist keyboard
+- tapOn:
+    point: "50%,84%" #Klik Tetapkan
+
+- tapOn:
+    point: "87%,91%" #Klik checklist keyboard
+
+- scroll
+- waitForAnimationToEnd:
+    timeout: 10000
+- tapOn:
+    point: "26%,75%" #Klik Tambah Foto
+- waitForAnimationToEnd:
+    timeout: 10000
+- tapOn:
+    point: "50%,80%" #Via Foto Langsung
+- waitForAnimationToEnd:
+    timeout: 10000
+- tapOn: "\"Shutter\" button" #Mengambil foto
+- waitForAnimationToEnd:
+    timeout: 10000
+- tapOn: "confirm"
+- waitForAnimationToEnd:
+    timeout: 10000
+
