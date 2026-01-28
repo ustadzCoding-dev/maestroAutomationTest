@@ -1,0 +1,61 @@
+appId: ${APP_USER}
+---
+
+- launchApp:
+    clearState: false
+- waitForAnimationToEnd:
+    timeout: 10000
+
+- tapOn:
+    point: "83%,50%" #Icon Bengkelin
+- waitForAnimationToEnd:
+    timeout: 10000
+
+- tapOn:
+    point: "71%,37%" #Klik Lokasi Saat Ini
+- waitForAnimationToEnd:
+    timeout: 10000
+
+- tapOn:
+    point: 74%,24% #Klik Reparasi
+- tapOn:
+    point: "26%,23%" #Klik Motor Kecil
+- tapOn:
+    point: "50%,41%" #Klik Jenis Reparasi
+- waitForAnimationToEnd
+- inputText: "Ganti Oli"
+- waitForAnimationToEnd
+- tapOn:
+    point: "92%,90%"
+- waitForAnimationToEnd
+
+- tapOn: "Tulis tipe kendaraan. Misal: Vario 125"
+- inputText: "Astrea Impressa"
+- waitForAnimationToEnd
+
+- scrollUntilVisible:
+    element:
+      text: "Mau minta oli Astra?"
+- waitForAnimationToEnd
+- tapOn: "Mau minta oli Astra"
+- inputText: "Oli Enduro 1 Pak"
+- waitForAnimationToEnd
+
+- tapOn:
+    point: "74%,97%"
+- waitForAnimationToEnd
+
+- tapOn:
+    point: 26%,70% #Klik Tambah Foto
+- tapOn:
+    point: 50%,80% #Via Kamera
+- waitForAnimationToEnd:
+    timeout: 10000
+- tapOn:
+    id: com.oppo.camera:id/shutter_button
+- waitForAnimationToEnd:
+    timeout: 10000
+- tapOn:
+    id: com.oppo.camera:id/done_button
+- waitForAnimationToEnd:
+    timeout: 10000
