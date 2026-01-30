@@ -7,7 +7,7 @@ appId: ${APP_USER}
     timeout: 10000
 
 - tapOn:
-    point: "61%,50%" #Ganti dengan Icon Bengkelin
+    point: "26%,24%" #Klik Inspeksi
 - waitForAnimationToEnd:
     timeout: 10000
 
@@ -15,3 +15,6 @@ appId: ${APP_USER}
     point: "71%,37%" #Klik Lokasi Saat Ini
 - waitForAnimationToEnd:
     timeout: 10000
+
+- tapOn:
+    point: "26%,68%" #Klik Mobil Besar
